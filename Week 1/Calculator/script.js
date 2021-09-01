@@ -13,8 +13,6 @@ class Calculator {
 
     delete(){
         this.currOp = this.currOp.toString().slice(0,-1)
-        
-
     }
 
     appendNum(num){
@@ -30,11 +28,9 @@ class Calculator {
             this.operation = operation
             this.prevOp = this.currOp
             this.currOp = ''
-
     }
 
     compute(){
-
         let computation 
         const previous = parseFloat(this.prevOp)
         const current = parseFloat(this.currOp)
@@ -79,7 +75,7 @@ getDisplayNum(num){
     }
 }
 
-    update(){
+update(){
 this.currTextElement.innerText = this.getDisplayNum(this.currOp)
 if(this.operation != null){
     this.prevTextElement.innerText = 
@@ -89,8 +85,6 @@ if(this.operation != null){
     }
   }
 }
-
-
 
 
 const numButtons = document.querySelectorAll('[data-num]')
